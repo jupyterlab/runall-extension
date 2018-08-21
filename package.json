@@ -1,5 +1,5 @@
 {
-    "name": "@jupyterlab/jupyterlab-runall",
+    "name": "@jupyterlab/runall-extension",
     "version": "0.1.0",
     "description": "Add a "Run All Cells" toolbar button, context menu item, and keyboard shortcut.",
     "keywords": [
@@ -7,9 +7,9 @@
       "jupyterlab",
       "jupyterlab-extension"
     ],
-    "homepage": "https://github.com/jupyterlab/jupyterlab-runall",
+    "homepage": "https://github.com/jupyterlab/runall-extension",
     "bugs": {
-      "url": "https://github.com/jupyterlab/jupyterlab-runall/issues"
+      "url": "https://github.com/jupyterlab/runall-extension/issues"
     },
     "license": "BSD-3-Clause",
     "author": "sccolbert",
@@ -21,7 +21,7 @@
     "types": "lib/index.d.ts",
     "repository": {
       "type": "git",
-      "url": "https://github.com/jupyterlab/jupyterlab-runall.git"
+      "url": "https://github.com/jupyterlab/runall-extension.git"
     },
     "scripts": {
       "build": "tsc",
