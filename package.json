@@ -1,7 +1,7 @@
 {
     "name": "@jupyterlab/runall-extension",
     "version": "0.1.0",
-    "description": "Add a "Run All Cells" toolbar button, context menu item, and keyboard shortcut.",
+    "description": "Add a 'Run All Cells' toolbar button, context menu item, and keyboard shortcut.",
     "keywords": [
       "jupyter",
       "jupyterlab",
