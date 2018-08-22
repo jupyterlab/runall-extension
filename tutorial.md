@@ -18,7 +18,7 @@ machine and available at the command line.
 
 ### 0. Setup a development environment
 
-Setup a new conda environment which includes:
+Set up a new conda environment which includes:
 1. The latest version of [JupyterLab](https://github.com/jupyterlab/jupyterlab)
 2. [cookiecutter](https://github.com/audreyr/cookiecutter), the tool used to bootstrap the extension
 3. [NodeJS](https://nodejs.org/en/), the JavaScript runtime used to compile the extension
@@ -30,7 +30,7 @@ activities on your machine.
 
 A new conda environment can be created with the required dependencies by running:
 ```bash
-conda create -n runall-extension nodejs jupyterlab cookiecutter git -c conda-forge
+conda create -n runall-extension jupyterlab cookiecutter nodejs git -c conda-forge
 ```
 
 Activate the new conda environment so that all commands operate on that environment.
@@ -45,7 +45,7 @@ On Windows:
 activate runall-extension
 ```
 
-**Note:** The above command will need to be executed on each new terminal you open in
+**Note:** The above command will need to be executed in each new terminal you open in
 order to work with the tools installed in that environment.
 
 ### 1. Initialize the project
@@ -64,7 +64,7 @@ project_short_description [A JupyterLab extension.]: Add a run-all-cells button 
 repository [https://github.com/my_name/myextension]: https://github.com/my_name/runall-extension
 ```
 
-Now cd into the the new extension directory and add everything to version control:
+Now cd into the new extension directory and add everything to version control:
 ```
 cd runall-extension
 git init
@@ -122,7 +122,7 @@ import {
 ```
 
 Next, create the widget extension class which creates a toolbar button. 
-At this point the button clicked callback simply logs to the console:
+At this point, the button `onClick` callback simply logs to the console:
 
 ```typescript
 class RunAllCellsButtonExtension implements DocumentRegistry.IWidgetExtension<NotebookPanel, INotebookModel> {
@@ -170,7 +170,7 @@ const extension: JupyterLabPlugin<void> = {
 export default extension;
 ```
 
-### 4. Try-out the extension
+### 4. Try out the extension
 
 At this point, the extension should create a working notebook toolbar button, albeit one that only 
 logs a message to the console.
@@ -197,7 +197,7 @@ the toolbar button shows up as expected:
 
 ![Toolbar Button](./assets/button1.png)
 
-### 5. Connect the button to the run-all-cells command
+### 5. Connect the button to the `run-all-cells` command
 
 The default notebook extension provides a builtin command to run all cells. 
 
