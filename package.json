@@ -1,42 +1,45 @@
 {
-    "name": "@jupyterlab/runall-extension",
-    "version": "0.1.0",
-    "description": "Add a 'Run All Cells' toolbar button, context menu item, and keyboard shortcut.",
-    "keywords": [
-      "jupyter",
-      "jupyterlab",
-      "jupyterlab-extension"
-    ],
-    "homepage": "https://github.com/jupyterlab/runall-extension",
-    "bugs": {
-      "url": "https://github.com/jupyterlab/runall-extension/issues"
-    },
-    "license": "BSD-3-Clause",
-    "author": "sccolbert",
-    "files": [
-      "lib/**/*.{d.ts,eot,gif,html,jpg,js,js.map,json,png,svg,woff2,ttf}",
-      "style/**/*.{css,eot,gif,html,jpg,json,png,svg,woff2,ttf}"
-    ],
-    "main": "lib/index.js",
-    "types": "lib/index.d.ts",
-    "repository": {
-      "type": "git",
-      "url": "https://github.com/jupyterlab/runall-extension.git"
-    },
-    "scripts": {
-      "build": "tsc",
-      "clean": "rimraf lib",
-      "watch": "tsc -w",
-      "prepare": "npm run clean && npm run build"
-    },
-    "dependencies": {
-      "@jupyterlab/application": "^0.18.0"
-    },
-    "devDependencies": {
-      "rimraf": "^2.6.1",
-      "typescript": "~2.9.2"
-    },
-    "jupyterlab": {
-      "extension": true
-    }
+  "name": "@jupyterlab/runall-extension",
+  "version": "0.1.0",
+  "description": "Add a 'Run All Cells' toolbar button and context menu item.",
+  "keywords": [
+    "jupyter",
+    "jupyterlab",
+    "jupyterlab-extension"
+  ],
+  "homepage": "https://github.com/jupyterlab/runall-extension",
+  "bugs": {
+    "url": "https://github.com/jupyterlab/runall-extension/issues"
+  },
+  "license": "BSD-3-Clause",
+  "author": "sccolbert",
+  "files": [
+    "lib/**/*.{d.ts,eot,gif,html,jpg,js,js.map,json,png,svg,woff2,ttf}",
+    "style/**/*.{css,eot,gif,html,jpg,json,png,svg,woff2,ttf}"
+  ],
+  "main": "lib/index.js",
+  "types": "lib/index.d.ts",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/jupyterlab/runall-extension.git"
+  },
+  "scripts": {
+    "build": "tsc",
+    "clean": "rimraf lib",
+    "watch": "tsc -w"
+  },
+  "dependencies": {
+    "@jupyterlab/application": "^0.18.0",
+    "@jupyterlab/apputils": "^0.18.2",
+    "@jupyterlab/docregistry": "^0.18.2",
+    "@jupyterlab/notebook": "^0.18.2",
+    "@phosphor/disposable": "^1.1.2"
+  },
+  "devDependencies": {
+    "rimraf": "^2.6.1",
+    "typescript": "~2.9.2"
+  },
+  "jupyterlab": {
+    "extension": true
   }
+}

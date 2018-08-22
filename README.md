@@ -1,2 +1,2 @@
 # runall-extension
-Add a "Run All Cells" toolbar button, context menu item, and keyboard shortcut.
+Add a 'Run All Cells' toolbar button and context menu item.
