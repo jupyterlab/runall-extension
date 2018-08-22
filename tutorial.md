@@ -192,8 +192,7 @@ Launch JupyterLab:
 jupyter lab
 ```
 
-Allow the JupyterLab watch process to rebuild the JupyterLab app then refresh the page and ensure
-the toolbar button shows up as expected:
+Refresh the page and ensure the toolbar button shows up as expected:
 
 ![Toolbar Button](./assets/button1.png)
 
