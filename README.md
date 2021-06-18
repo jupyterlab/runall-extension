@@ -1,8 +1,8 @@
 # runall-extension
 
-Archived
+## Archived
 
-This project is archived. Development is now happening in https://github.com/jupyterlab/jupyterlab.
+**This project is archived. Development is now happening in https://github.com/jupyterlab/jupyterlab.**
 
 If you use JupyterLab 3.x:
 
